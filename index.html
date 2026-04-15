@@ -1,0 +1,214 @@
+<html lang="es">
+<head>
+<style>
+
+/* ========== RESET Y MODELO DE CAJAS ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ========== ESTILOS GENERALES ========== */
+body {
+    background:#C0C0C0 ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ========== CONTENEDOR PRINCIPAL ========== */
+#contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    background: blue;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+/* ========== ENCABEZADO ========== */
+header {
+    background: #800080;
+    color: black;
+    text-align: center;
+    padding: 2rem;
+}
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    font-style: italic;
+    color: #ffdd99;
+}
+
+/* ========== MENÚ DE NAVEGACIÓN ========== */
+nav {
+    background:black;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+/* Eliminar viñetas y estilos por defecto */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Elementos del menú en línea horizontal */
+nav ul li {
+    display: inline-block;
+    margin: 0 2px;
+}
+
+/* Estilos de los enlaces */
+nav ul li a {
+    display: block;
+    padding: 12px 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    border-radius: 30px;
+}
+
+/* EFECTO HOVER: cambio de fondo y elevación */
+nav ul li a:hover {
+    background-color: brown;
+    color: #1e4a3a;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* ========== SECCIÓN PRINCIPAL ========== */
+section {
+    background: red;
+    padding: 1.8rem;
+    overflow: hidden;
+}
+
+/* ========== ARTÍCULO ========== */
+article {
+    float: left;
+    width: 68%;
+    background: #3b8c6e;
+    color: white;
+    border-radius: 20px;
+    padding: 1.5rem;
+    min-height: 250px;
+}
+article h2 {
+    margin-bottom: 0.8rem;
+    color: #f9e0a8;
+}
+article p {
+    margin-bottom: 0.6rem;
+    line-height: 1.5;
+}
+
+/* ========== BARRA LATERAL ========== */
+aside {
+    float: right;
+    width: 28%;
+    background: #f4a261;
+    color: blue;
+    border-radius: 20px;
+    padding: 1.2rem;
+    min-height: 250px;
+}
+aside h3 {
+    margin-bottom: 0.8rem;
+    color: #fff2df;
+}
+aside p {
+    margin-bottom: 0.6rem;
+}
+
+/* ========== PIE DE PÁGINA ========== */
+footer {
+    background: #2c3e2f;
+    color: grey;
+    text-align: center;
+    padding: 1.2rem;
+    font-size: 0.9rem;
+}
+footer p:first-child {
+    margin-bottom: 0.5rem;
+}
+
+/* ========== MEDIA QUERY (RESPONSIVE) ========== */
+@media (max-width: 768px) {
+    article, aside {
+        width: 100%;
+        float: none;
+        margin-bottom: 1rem;
+    }
+    section {
+        padding: 1rem;
+    }
+    
+    /* Menú responsivo: elementos en columna para móvil */
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+    
+    nav ul li a {
+        padding: 10px;
+        background: #f39c12;
+        margin: 0 10px;
+    }
+}
+                        
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> GALLETAS GAMESA | Raíces</title>
+    <link rel="stylesheet" href="estilos.css">
+</style>
+</head>
+<body>
+    <div id="contenedor">
+        <header>
+            <h1> 🍪GALLETAS GAMESA🍪</h1>
+            <p>Las mejores galletas del rumbo</p>
+        </header>
+
+        <nav>
+             <ul>
+                <li><a href="index.html">🏠 Inicio</a></li>
+                <li><a href="productos.html">🛍️ Productos</a></li>
+                <li><a href="historia.html">📖 Historia</a></li>
+                <li><a href="contactos.html">📞 Contacto</a></li>
+            </ul>
+        </nav>
+         <main class="contenedor-principal">
+          <section class="contenido">
+            <h2>Bienvenido a nuestro fabrica</h2>
+            <p>Productos elaborados con la mejor calidad y sabor echos en el mundo variedad de galletas y mas productos solo en galletas gamesa.</p>
+            <img src="img2.jpg" alt="Producto 1" class="img-fluida">
+            <img src="img3.jpg" alt="Producto 2" class="img-fluida">  
+
+                   <section>
+            <article>
+                <h2>GALLETAS CH🍪KIS</h2>
+                <p>Elaborado con harina y chocolates de la mejor calidad.</p>
+                <p><strong>Presentación:</strong> 90g de contenido.</p>
+            </article>
+
+            <aside>
+                <h3>🎉 Promoción especial😁</h3>
+                <p>12 empaques de gallates por $100 MXN.</p>
+                <p>Válido hasta el 25 de marzo de 2026.</p>
+            </aside>
+        </section>
+
+        <footer>
+            <p>© 2026 GAMESA.INC - Chimalhuacán, Estado de México</p>
+        </footer>
+    </div>
+</body>
+</html>
